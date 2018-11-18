@@ -16,8 +16,16 @@ describe('calculator functionality', function() {
     expect(running_total.getAttribute('value')).to.eventually.equal('2')
   })
 
-  it("should have", function(){
+  it("should concatenate multiple number button clicks", function(){
 
+  })
+
+  it("should chain multiple operations together", function() {
+
+  })
+
+  it("should be able to clear the running total without affecting the calculation", function() {
+    
   })
 
   // - `calculator.numberClick()` - concatenate multiple number button clicks
