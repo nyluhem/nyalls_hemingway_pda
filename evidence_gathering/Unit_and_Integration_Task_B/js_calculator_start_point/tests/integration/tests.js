@@ -17,7 +17,10 @@ describe('calculator functionality', function() {
   })
 
   it("should concatenate multiple number button clicks", function(){
-
+    running_total = element(by.css("#running_total"))
+    element(by.css("#number2")).click();
+    element(by.css("#number4")).click();
+    expect(running_total.getAttribute("value")).to.eventually.equal("24")
   })
 
   it("should chain multiple operations together", function() {
@@ -25,10 +28,9 @@ describe('calculator functionality', function() {
   })
 
   it("should be able to clear the running total without affecting the calculation", function() {
-    
+
   })
 
-  // - `calculator.numberClick()` - concatenate multiple number button clicks
   // - `calculator.operatorClick()` - chain multiple operations together
   // - `calculator.clearClick()` - clear the running total without affecting the calculation
 
