@@ -21,7 +21,7 @@ Calculator.prototype = {
 
   divide: function(number){
     if (number == 0) {
-      this.runningTotal =  "NaN"
+      this.runningTotal = "NaN"
     } else {
     this.runningTotal = parseFloat(this.previousTotal) / parseFloat(number);
     }
